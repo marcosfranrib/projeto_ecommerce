@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 body{
@@ -51,6 +52,31 @@ li{
     color: #fffefe;
     transform: scale(1);
 
+}
+
+#container-livros{
+    display: flex;
+    justify-content: center;
+    height: 69vh;
+    width: 100vw;
+    padding-top: 50px;
+
+}
+
+#livro-principal{
+    height: 300px;
+    width: 200px;
+    position: absolute;
+    left: 25%;
+    background-image: url(imagens/teologia-sistematica.jpg);
+    background-size: contain;
+    border-radius: 3px;
+
+}
+
+#livro-principal:hover{
+    transition-property:"transform", 0.2s;
+    transform: scale(1.2);
 }
 
 
