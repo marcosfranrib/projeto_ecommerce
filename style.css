@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
+
 }
 
 body{
@@ -56,28 +56,67 @@ li{
 
 #container-livros{
     display: flex;
-    justify-content: center;
-    height: 69vh;
-    width: 100vw;
-    padding-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    width: 98vw;
+    padding-top: 30px;
+
 
 }
 
 #livro-principal{
     height: 300px;
     width: 200px;
-    position: absolute;
-    left: 25%;
     background-image: url(imagens/teologia-sistematica.jpg);
     background-size: contain;
     border-radius: 3px;
 
 }
 
+
+.descricao{
+   padding: 10px;
+}
+
+.valor{
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+
+.comprar{
+    padding: 20px 30px;
+    background-color: #ecc219;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* SÓ PRA VERSÃO DE DESKTOP
+
 #livro-principal:hover{
-    transition-property:"transform", 0.2s;
+    transition-property: transform;
+    transition-duration: 0.5s;
     transform: scale(1.2);
 }
+
+#livro-principal:not(:hover){
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transform: scale(1);
+}*/
+
 
 
 
