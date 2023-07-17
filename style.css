@@ -55,22 +55,21 @@ li{
 
 }
 
-#container-livros{
+#container-produtos{
     display: flex;
     height: 500px;
     width: 100%;
 
 }
 
-#livro01,#livro02{
+.produto{
     height: 420px;
     width: 180px;
     margin: auto;
    
-   
 }
 
-.opacidade{
+.capa-opacidade{
     z-index: 1;
     position: absolute;
     height: 250px;
@@ -79,12 +78,12 @@ li{
   
 }
 
-.opacidade:hover{
+.capa-opacidade:hover{
     background-color: #ecc219;
 
 }
 
-#capa01,#capa02{
+#livro01,#livro02,#caneca01,#caneca02{
     z-index: 0;
     height: 250px;
     background-image: url(imagens/teologia-sistematica.png);
@@ -94,12 +93,20 @@ li{
   
 }
 
-#capa02{
+#livro02{
     background-image: url(imagens/ego-transformado.png);
  
 }
 
-#descricao01,#descricao02{
+#caneca01{
+    background-image: url(imagens/caneca01.png);
+}
+
+#caneca02{
+    background-image: url(imagens/caneca02.jpg);
+}
+
+.descricao{
     font-size: 16px;
     text-align: center;
     padding: 15px;
@@ -125,31 +132,42 @@ li{
 
 }
 
-.botao-comprar{
-    display: block;
-    padding: 20px;
-    background-color: #ecc219;
-    color: white;
-    font-size: 15px;
-    border: none;
-    border-radius: 10px;
-    margin: 10px auto;
-    
-}
-
 .botao-comprar:hover{
     cursor: pointer;
 }
 
-footer{
-    padding: 10px;
+#mais-produtos{
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(53, 187, 60);
+}
+
+#mais-produtos a{
+    color: white;
+    text-decoration: none;
+}
+
+aside{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 120px;
+    margin-top: 10px;
+    background-color: rgb(43, 41, 41);
+    color: white;
+}
+
+#creditos{
+    padding: 20px;
     text-align: center;
     background-color: rgb(43, 41, 41);
     color: white;
 
 }
 
-footer a{
+#creditos a{
     color: #ecc219;
 }
 
@@ -163,13 +181,13 @@ footer a{
 
 /* SÓ PRA VERSÃO DE DESKTOP
 
-#livro-principal:hover{
+#:hover{
     transition-property: transform;
     transition-duration: 0.5s;
     transform: scale(1.2);
 }
 
-#livro-principal:not(:hover){
+#:not(:hover){
     transition-property: transform;
     transition-duration: 0.5s;
     transform: scale(1);
