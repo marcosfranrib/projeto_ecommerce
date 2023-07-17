@@ -1,2 +1,2 @@
-# projeto_ecommerce
+# Loja Virtual para igreja
  
