@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(250, 240, 214);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+      
+}
+
+#logo-loja{
+    display: block;
+    margin: 10px auto;
+
+}
+
+#menu-principal{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px 0px;
+
+}
+
+#carrinho::before{
+    list-style-image: url(imagens/carrinho.svg);
+    font-size: larger;
+   
+}
+
+#menu-principal a{
+    color: #2b2828;
+    text-decoration: none;
+    
+}
+
