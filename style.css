@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: rgb(250, 240, 214);
+    background-color: #faf0d670;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -19,27 +19,39 @@ header{
 
 #logo-loja{
     display: block;
-    margin: 10px auto;
+    margin: 18px auto 17px;
+    transform: scale(0.9);
 
 }
 
 #menu-principal{
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 15px 0px;
-
-}
-
-#carrinho::before{
-    list-style-image: url(imagens/carrinho.svg);
+    justify-content: space-around;
+    padding: 10px 4px;
     font-size: larger;
-   
+    background-color: #ecc219;
+
 }
 
 #menu-principal a{
-    color: #2b2828;
+    color:#fffefe;
     text-decoration: none;
-    
+
 }
+
+li{
+    display: flex;
+    align-items: center;
+    list-style-type: none; 
+
+}
+
+.material-symbols-outlined{
+    margin: 0px 4px 5px 0px; 
+    color: #fffefe;
+    transform: scale(1);
+
+}
+
+
 
