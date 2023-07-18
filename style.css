@@ -57,35 +57,19 @@ li{
 
 #container-produtos{
     display: flex;
-    height: 500px;
-    width: 100%;
-
-}
-
-.produto{
-    height: 420px;
-    width: 180px;
-    margin: auto;
-   
-}
-
-.capa-opacidade{
-    z-index: 1;
-    position: absolute;
-    height: 250px;
-    width: 180px;
-    opacity: 0.5;
+  justify-content: center; 
   
 }
 
-.capa-opacidade:hover{
-    background-color: #ecc219;
-
+.produto{
+    border: 0.5px solid;
+    margin: 20px 5px;
 }
 
 #livro01,#livro02,#caneca01,#caneca02{
     z-index: 0;
-    height: 250px;
+    height: 220px;
+    width: 170px;
     background-image: url(imagens/teologia-sistematica.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -106,15 +90,35 @@ li{
     background-image: url(imagens/caneca02.jpg);
 }
 
-.descricao{
+.capa-opacidade{
+    z-index: 1;
+    position: absolute;
+    height: 220px;
+    width: 170px;
+    opacity: 0.5;
+  
+}
+
+.capa-opacidade:hover{
+    background-color: #ecc219;
+
+}
+
+.descricao,.descricao02{
     font-size: 16px;
     text-align: center;
-    padding: 15px;
+    padding-top: 15px;
+ 
+}
 
+.descricao02{
+    padding-top: 32px;
+    padding-bottom: 2px;
 }
 
 .valor{
     padding-top: 15px;
+    padding-bottom: 10px;
     font-size: x-large;
     font-weight: bold;
     
@@ -124,12 +128,11 @@ li{
     display: block;
     margin: auto;
     padding: 20px;
-    width: 120px;
+    width: 100%;
     background-color: #ecc219;
     color: white;
     border: none;
-    border-radius: 10px;
-
+    
 }
 
 .botao-comprar:hover{
@@ -140,8 +143,9 @@ li{
     width: 100%;
     padding: 20px;
     font-size: 20px;
+    margin-top: 25px;
     text-align: center;
-    background-color: rgb(53, 187, 60);
+    background-color: #35bb3c;
 }
 
 #mais-produtos a{
@@ -152,6 +156,7 @@ li{
 aside{
     display: flex;
     align-items: center;
+    justify-content: center;
     text-align: center;
     height: 120px;
     margin-top: 10px;
